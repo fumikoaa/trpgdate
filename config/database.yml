@@ -83,3 +83,7 @@ production:
   database: trpgdate_production
   username: trpgdate
   password: <%= ENV['TRPGDATE_DATABASE_PASSWORD'] %>
+    adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
+  pool: 5
+  timeout: 5000
