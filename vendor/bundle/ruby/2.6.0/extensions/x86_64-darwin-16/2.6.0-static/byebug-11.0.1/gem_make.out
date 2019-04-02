@@ -1,0 +1,19 @@
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+/Users/ashitanifumiko/.rbenv/versions/2.6.0/bin/ruby -I /Users/ashitanifumiko/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190402-64771-9m9tfh.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/byebug-11.0.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20190402-64771-1q0e86k/byebug

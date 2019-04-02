@@ -1,0 +1,15 @@
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.2/ext/bootsnap
+/Users/ashitanifumiko/.rbenv/versions/2.6.0/bin/ruby -I /Users/ashitanifumiko/.rbenv/versions/2.6.0/lib/ruby/site_ruby/2.6.0 -r ./siteconf20190402-64771-fgijiv.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.2/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.2/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/ashitanifumiko/trpgdate/vendor/bundle/ruby/2.6.0/gems/bootsnap-1.4.2/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20190402-64771-1cuob9u/bootsnap
