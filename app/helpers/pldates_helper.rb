@@ -1,0 +1,2 @@
+module PldatesHelper
+end

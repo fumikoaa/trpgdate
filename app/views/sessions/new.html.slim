@@ -1,0 +1,28 @@
+.container_login
+  .left_content
+    =form_for :session, url: login_path do |f|
+      .form-group
+        = f.label :email, "メールアドレス"
+        = f.email_field :email, class: 'form-control'
+      .form-group
+        = f.label :password, "パスワード"
+        = f.password_field :password, size: 27, class: 'form-control'
+      =submit_tag "ログイン", :class => "btn-circle-border-doubled"
+.box
+  .right_content
+      .foo
+        span.letter data-letter="L"  L
+        span.letter data-letter="e"  e
+        span.letter data-letter="t"  t
+        span.letter data-letter="'"  '
+        span.letter data-letter="s"  s
+        .border-bottom
+        span.letter data-letter="P"  P
+        span.letter data-letter="L"  L
+        span.letter data-letter="A"  A
+        span.letter data-letter="Y"  Y
+        .border-bottom
+        span.letter data-letter="T"  T
+        span.letter data-letter="R"  R
+        span.letter data-letter="P"  P
+        span.letter data-letter="G"  G

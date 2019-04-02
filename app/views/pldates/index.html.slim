@@ -1,0 +1,51 @@
+  .container_login
+    p 簡易シナリオ作成・保管サイト
+    .mb-5
+    = link_to '新規登録', new_pldate_path, class: 'btn btn-outline-primary'
+    .
+      = paginate @pldates
+      = page_entries_info @pldates
+    .line
+      .row
+        - @pldates.each do |pldate|
+          .col-sm-4.mb-3
+            .border.border-dark.rounded-lg
+              .card-body
+                .card-title
+                  td= pldate.title
+                .card-text
+                  |推奨人数
+                  br
+                  th= pldate.name
+                  br
+                  td
+                    = link_to '詳細', pldate, class: 'btn btn-light p-0 mr-4'
+                    = link_to '編集', edit_pldate_path(pldate), class: 'btn btn-outline-info p-0 mr-4'
+                    = link_to '削除', pldate, method: :delete, data: { confirm: "削除しても良いですか？" }, class: 'btn btn-outline-danger p-0 '
+    .right
+      .right_contents
+        p TRPGシナリオサイト
+        .mb-3
+        .span
+          = link_to image_tag("scenarch.png"), "http://scenarch.com/"
+        .mb-3
+        p 立ち絵素材
+        .mt-2
+        .spans
+          = link_to image_tag("ranuki.jpg"), "http://ranuking.ko-me.com/"
+        .mb-3
+        p キャラメイク
+        .mt-2
+        .spanm
+          = link_to image_tag("charat.png"), "https://charat.me/"
+        .mt-2
+        p クトゥルフ　神話生物立ち絵
+        p 　　　　  （注意事項を確認）
+        .mt-2
+        .spanm
+          = link_to image_tag("shinwa.jpeg"), "https://commons.nicovideo.jp/user/upload/2285573"
+        .mb-3
+        p フリーBGM
+        .mt-2
+        .spanm
+          = link_to image_tag("musicbox.png"), "http://amachamusic.chagasi.com/index.html"

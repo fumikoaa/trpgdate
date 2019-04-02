@@ -1,0 +1,204 @@
+// Place all the styles related to the pldates controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 120%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body a {
+  font-family: 'Tamira';
+  font-size: 160%;
+}
+.container_login {
+  margin: 0 10% 0 15%;
+  padding: 0;
+}
+.btn-circle-border-doubled {
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  width: 115px;
+  height: 110px;
+  line-height: 110px;
+  border-radius: 50%;
+  border: double 4px #668ad8;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: .6s;
+  margin: 40px 64px;
+}
+
+.btn-circle-border-doubled:hover {
+  -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+.container {
+  font-family: 'komorebi';
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+.btn-outline-primary {
+  margin: 20px 0;
+}
+.line {
+  width: 800px;
+  margin: 0;
+  display: inline-block;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.card-title {
+  margin: 5px 0;
+}
+
+header {
+  height: 130px;
+  background-color: gray;
+}
+.right_contents {
+  width: 220px;
+  margin:  0;
+}
+.right {
+  float: right;
+}
+.span {
+  width: 110%;
+  background-color: black;
+}
+
+.spans img {
+  width: 110%;
+  height: 39px;
+  border: 1px black solid;
+}
+
+.spanm a img {
+  width: 110%;
+  height: 39px;
+  border: 1px black solid;
+}
+
+
+.left_content {
+  float: left;
+  width: 250px;
+  margin: 80px 350px 0 10px;
+  display: inline-block;
+}
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 33px;
+}
+
+h4 {
+  font-size: 27px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.textform {
+  margin: 0 25%;
+}
+
+
+.right_content {
+  font-family: serif;
+  float: right;
+}
+div.foo{
+  width: 120%;
+  margin: 0 -59%;
+  text-align: center;
+}
+.letter{
+  display: inline-block;
+  font-weight: 900;
+  font-size: 9.5em;
+  margin: 0.1em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 2;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow:
+    -1px 0px 2px rgba(255,255,255,.8),
+    1px 0px 2px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}

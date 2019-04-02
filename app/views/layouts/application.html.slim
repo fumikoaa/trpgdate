@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title
+      | TRPGteller
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  body
+    .navbar.navbar-expand-md.navbar-llight.bg-light
+      .navbar-brand
+        a href="/"T R P G teller
+      ul.navbar-nav.ml-auto
+      - if @current_user
+        .nav-item= link_to 'ログアウト', logout_path, method: :delete, class: 'nav-link h5 mt-1 mr-3 '
+      - else
+        .nav-item= link_to "新規登録", new_user_path, method: :get, class: 'nav-link h5 mr-3'
+        .nav-item= link_to "ログイン", login_path, method: :get, class: 'nav-link h5'
+    .container
+        -if flash.notice.present?
+          .alert.alert-success= flash.notice
+        = yield

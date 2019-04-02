@@ -1,0 +1,19 @@
+
+  = form_with model: pldate, local: true do |f|
+    - if pldate.errors.present?
+      ul#error_explanation
+        - pldate.errors.full_messages.each do |message|
+          p= message
+
+    .form_group
+      = f.label :title
+      = f.text_field :title, class: 'form-control', id: 'pldate_title'
+    .form-group
+      = f.label :name
+      = f.text_field :name, class: 'form-control', id: 'pldate_name'
+    .form-group
+      = f.label :url
+      = f.text_area :url, rows: 30, class: 'form-control', id: 'pldate_url'
+
+      = f.submit nil, class: 'btn btn-outline-primary mr-2'
+      = link_to '取り消し', pldates_path, class: 'btn btn-outline-danger'

@@ -1,0 +1,22 @@
+.textform
+  .mb-4
+  br
+  h4　詳細
+  .mb-5
+
+  br
+  table.table.table-hover
+    tbody
+      tr
+        th= Pldate.human_attribute_name(:title)
+        td= @pldate.title
+      tr
+        th= Pldate.human_attribute_name(:name)
+        td= @pldate.name
+      tr
+        th= Pldate.human_attribute_name(:url)
+        td= auto_link(simple_format(h(@pldate.url), {}, sanitize: false, wrapper_tag: "div"))
+  = link_to '編集', edit_pldate_path, class: 'btn btn-outline-info mr-3'
+  = link_to '削除', @pldate, method: :delete, data: { confirm: "削除しても良いですか？" }, class: 'btn btn-outline-danger'
+  br
+  = link_to 'TOP', pldates_path, class: 'btn btn-outline-primary mt-2 mr-5'
